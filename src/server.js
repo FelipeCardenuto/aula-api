@@ -6,6 +6,7 @@ const cardController = require('./controllers/cardController')
 const app = express();
 app.use(express.json());
 app.use('/api/users', userController);
+app.use('/api/users', cardController);
 app.use('/api/content', contentController);
 app.use('/api/card', cardController);
 
